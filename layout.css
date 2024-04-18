@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #83c05b;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*Navigaatio alkaa*/
+
+nav {
+  max-width: 100%;
+}
+
+.valikko {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #9dcd7c;
+  color: white;
+  padding: 1rem;
+  border: 1px solid #5b8536;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px #5b8536;
+}
+/*Navigaatio loppuu*/
+
+/*Main content alkaa*/
+#vision figure {
+  display: none;
+}
+
+h1 {
+  padding: 1rem;
+  background: #83c05b;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  background: #cbcbcb;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.button img {
+  max-height: 1.5rem;
+}
+
+#boxes section {
+  margin: 1rem 0;
+  background: white;
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.list-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+/*Main content loppuu*/
+
+/*Footer alkaa*/
+
+footer {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.puh-nro {
+  color: black;
+}
+
+footer img {
+  max-height: 1rem;
+}
+
+/* vanhemman säännöt */
+.footer-kuvakkeet {
+  display: flex;
+  flex-direction: row;
+}
+/* lasten säännöt */
+.footer-kuvakkeet > * {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.footer-kuvakkeet .osoite {
+  flex-grow: 10;
+}
+#ikonit {
+  text-align: end;
+}
+
+/*Footer loppuu*/
+
+@media only screen and (min-width: 426px) {
+  nav {
+    display: flex;
+  }
+
+  .valikko {
+    width: 100%;
+  }
+  #vision figure {
+    display: flex;
+    flex-grow: 1;
+  }
+  #vision {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    background: white;
+    padding: 1rem;
+    align-items: stretch;
+  }
+  #vision section {
+    display: flex;
+    flex: auto;
+  }
+  h1 {
+    background-image: url(./images/beige-background.jpeg);
+    display: flex;
+    align-items: center;
+  }
+
+  #boxes section {
+    padding: 0;
+  }
+
+  .box-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  #boxes #specials {
+    padding: 1rem 0.5rem 1rem 1rem;
+  }
+  #boxes #events {
+    padding: 1rem 1rem 1rem 0.5rem;
+  }
+  #boxes #news {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  body {
+    margin: 1rem;
+  }
+
+  #boxes {
+    display: flex;
+    flex-direction: row;
+  }
+  #boxes section {
+    padding: 0;
+  }
+  .box-wrapper {
+    width: 67%;
+  }
+  #boxes #specials {
+    padding: 1rem 0.5rem 1rem 1rem;
+  }
+
+  #boxes #events {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  #boxes #news {
+    padding: 1rem 1rem 1rem 0.5rem;
+    width: 33%;
+  }
+}
